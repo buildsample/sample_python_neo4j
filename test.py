@@ -7,7 +7,7 @@ class TestSuite(unittest.TestCase):
     def test(self):
         neo = Neo()
         neo.populate()
-        eden = neo.eve()
+        edeen = neo.eve()
         self.failIf(not eden)
 
 
