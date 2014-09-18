@@ -22,3 +22,4 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 archive: true
+parallelized_test : true
