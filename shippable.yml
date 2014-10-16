@@ -23,7 +23,9 @@ script:
   - coverage xml -o shippable/codecoverage/coverage.xml test.py
 
 archive: true
+
 parallelized_test : true
 #cache: true
+
 after_script:
   - cp README.md ./shippable
