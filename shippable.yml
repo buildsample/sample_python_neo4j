@@ -1,5 +1,6 @@
 language: python
 
+
 python:
   - 2.7
   - 2.6
@@ -26,6 +27,7 @@ archive: true
 
 parallelized_test : true
 #cache: true
+
 
 after_script:
   - cp README.md ./shippable
