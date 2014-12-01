@@ -1,4 +1,5 @@
-Python Neo4j Example [![Build Status](https://apibeta.shippable.com/projects/537a5cbdd7430f10004f7550/badge/master)](https://beta.shippable.com/projects/537a5cbdd7430f10004f7550)
+Python Neo4j Example 
 ===================
+[![Build Status](https://api.shippable.com/projects/54218f4678826375c3f0d266/badge?branchName=master)](https://app.shippable.com/projects/54218f4678826375c3f0d266/builds/latest)
 jun 10
 Using and testing a Neo4j graph database instance with Python.
