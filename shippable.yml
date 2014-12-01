@@ -4,8 +4,6 @@ language: python
 python:
   - 2.7
   - 3.3
- 
-
 
 # Mongo binds to 127.0.0.1 by default
 services:
@@ -28,7 +26,6 @@ archive: true
 
 parallelized_test : true
 #cache: true
-
 
 after_script:
   - cp README.md ./shippable
