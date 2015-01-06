@@ -26,7 +26,7 @@ script:
 archive: true
 
 parallelized_test : true
-#cache: true
+cache: true
 
 after_script:
   - cp README.md ./shippable
