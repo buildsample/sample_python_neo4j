@@ -2,6 +2,9 @@ language: python
 
 #build_image: shippable/minv2:beta 
 
+env:
+ - secure: EGoU/Q+eZCaZZMJjZ4iUIhFsx7sIhw9J8VU5cM9duvlVwlQbpH6TMzy7IOt0edNotJxwueTgWSdy0PvOoNgIYgVxjsZZFxcQyBU1xn82Pge9v4AYWg9AiyWtXAgYQzhEzwJeNtag+Xitb2fWLVk7jvw2yjU/PmykpxXctJql81K+j7d3haokVLEdaXPSiMsT/LW20HB9WkXZtsUI2D2JNElMLBRNOPWmYqsf9YjaGcaedHqB8wnxsZQ04V90i8m+HQXQs1IaFe81tUcPsnfIDObpalqzNhVEri5f1FdMwM3BqO9vsqvuLuRy8aCXum47vKhp5rvhoYCvFtJnmpmq9A==
+
 
 python:
   - 2.7
@@ -18,6 +21,7 @@ install:
 before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
+  - echo $key1 and $key2
 
 script:
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
@@ -27,7 +31,7 @@ script:
 archive: true
 
 parallelized_test : true
-cache: true
+#cache: true
 
 after_script:
   - cp README.md ./shippable
