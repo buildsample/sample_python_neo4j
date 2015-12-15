@@ -30,8 +30,8 @@ script:
 
 archive: true
 
-after_success :
-  - git push -f git@heroku.com:$APP_NAME.git master
+#after_success :
+ # - git push -f git@heroku.com:$APP_NAME.git master
   
 parallelized_test : true
 #cache: true
