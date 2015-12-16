@@ -39,6 +39,4 @@ parallelized_test : true
 after_script:
   - cp README.md ./shippable
 
-branches:
-    only:
-     - master
+
