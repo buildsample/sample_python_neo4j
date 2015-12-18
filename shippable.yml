@@ -1,5 +1,6 @@
 language: python
 
+
 python:
   - 2.7
 
@@ -22,5 +23,6 @@ script:
 
 build_image: drydock/u12pytall:tip
 
-
+notifications:
+  email: false
 archive: true
